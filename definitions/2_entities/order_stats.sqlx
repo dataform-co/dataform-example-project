@@ -26,6 +26,8 @@ config {
   }
 }
 
+
+
 SELECT orders.date            AS order_date,
        orders.id              AS id,
        orders.customer_id     AS customer_id,
