@@ -6,6 +6,7 @@
 
 config {
   type: "table",
+  dependencies: ["order_stats_assertions_uniqueKey"],
   tags: ["reporting", "daily"],
   description: "This table contains all information about our customers. The data comes from the CRM and orders.",
   columns: { id: "unique customer identifier", 

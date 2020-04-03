@@ -4,9 +4,10 @@
 */
 
 config {
-  type: "table",
+  type: "incremental",
   schema: "sources",
-  tags: ["sources", "daily"]
+  tags: ["sources", "daily"],
+  uniqueKey: ["id"]
 }
 
 SELECT id AS id,
@@ -17,3 +18,5 @@ SELECT id AS id,
        item_count AS item_count
 FROM
   shopify.orders
+
+${when(incremental(), `where date > "2020-01-01"`)}
