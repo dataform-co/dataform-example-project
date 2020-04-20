@@ -13,7 +13,7 @@ SELECT id AS id,
        first_name AS first_name,
        last_name AS last_name,
        email AS email,
-       country AS country
+       country AS country22
 FROM
   crm.customer
 
