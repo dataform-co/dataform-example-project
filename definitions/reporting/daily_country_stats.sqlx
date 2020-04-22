@@ -5,6 +5,7 @@ config {
   columns: {
     date: "Date of the order",
     country: "Country of the user",
+    country_group: "Country of the user",
     item_count: "Number of items ordered that day",
     amount: "Total amount of revenue generated from orders that day, in US dollars using a floating FX rate"
   },
