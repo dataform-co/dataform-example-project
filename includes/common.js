@@ -5,9 +5,9 @@
 
 function countryGroup(countryCodeField) {
   return `case
-            when ${countryCodeField} in ('us', 'ca') then 'NA'
-            when ${countryCodeField} in ('gb', 'fr', 'de', 'it', 'pl') then 'EU'
-            when ${countryCodeField} in ('AU') then ${countryCodeField}
+            when lower(${countryCodeField}) in ('us', 'ca') then 'NA'
+            when lower(${countryCodeField}) in ('gb', 'fr', 'de', 'it', 'pl') then 'EU'
+            when lower(${countryCodeField}) in ('AU') then lower(${countryCodeField})
             else 'Other countries'
             end`;
 }
