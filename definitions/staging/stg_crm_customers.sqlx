@@ -1,6 +1,6 @@
 config {
   type: "table",
-  schema: "sources",
+  schema: "sources_2",
   tags: ["staging", "daily"],
   description: "Cleaned version of the raw crm.customer table."
 }
