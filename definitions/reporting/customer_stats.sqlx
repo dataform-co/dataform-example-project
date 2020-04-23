@@ -34,9 +34,9 @@ select
 from
   ${ref("stg_crm_customers")} customers
   left join ${ref("order_stats")} orders 
-    on customers.id = orders.customer_id
+    on customers.customer_id = orders.customer_id
 where
-  customers.id is not null
+  customers.customer_id is not null
   and customers.first_name <> 'internal account'
 group by
   1,2,3,4,5,6
