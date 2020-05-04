@@ -14,3 +14,4 @@ select
   coalesce(cast(item_count as int), 0) as item_count
 from
   ${ref("shopify", "orders")}
+  
