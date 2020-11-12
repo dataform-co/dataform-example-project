@@ -8,13 +8,13 @@
     "cron": "00 09 * * *",
     "notifications": [{
       "events": ["failure"],
-      "channels": ["Email-channel-1"]
+      "channels": ["email_jo"]
     }]
   }],
   "notificationChannels": [{
-    "name": "team-email",
+    "name": "email_jo",
     "email": {
-      "to": ["team@dataform.co"]
+      "to": ["jo_bloggs@acme.co"]
     }
   }]
 }
